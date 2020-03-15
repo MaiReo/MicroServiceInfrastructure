@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\target-std.props"></Import>
+  <Import Project="..\..\common.props"></Import>
+  <Import Project="..\..\sign.props"></Import>
+  
+  <PropertyGroup>
+    <RootNamespace>Core.Events</RootNamespace>
+    <PackageId>MaiReo.MicroService.PersistentStore.ElasticSearch6</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="Nest" Version="6.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Abstractions\Core.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

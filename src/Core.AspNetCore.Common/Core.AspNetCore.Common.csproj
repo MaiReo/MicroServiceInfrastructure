@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\target-app.props"></Import>
+  <Import Project="..\..\common.props"></Import>
+  <Import Project="..\..\sign.props"></Import>
+  
+  <PropertyGroup>
+    <RootNamespace>Core.Web</RootNamespace>
+    <PackageId>MaiReo.MicroService.AspNetCore.Common</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Abstractions\Core.Abstractions.csproj" />
+  </ItemGroup>
+</Project>
+  
+

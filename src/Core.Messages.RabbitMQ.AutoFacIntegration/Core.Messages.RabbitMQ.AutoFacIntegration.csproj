@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props"></Import>
+  <Import Project="..\..\sign.props"></Import>
+  
+  <PropertyGroup>
+    <PackageId>MaiReo.MicroService.Messages.RabbitMQ.AutoFacIntegration</PackageId>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Messages.RabbitMQ\Core.Messages.RabbitMQ.csproj" />
+  </ItemGroup>
+</Project>

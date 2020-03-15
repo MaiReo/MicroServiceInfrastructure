@@ -1,0 +1,10 @@
+<Project>
+  <Import Project="version.props"></Import>
+  <Import Project="meta.props"></Import>
+  
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <IncludeSource>true</IncludeSource>
+    <IncludeSymbols>true</IncludeSymbols>
+  </PropertyGroup>
+</Project>

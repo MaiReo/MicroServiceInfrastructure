@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Core.KeyValues</RootNamespace>
+    <PackageId>MaiReo.MicroService.KeyValues.AliyunACM</PackageId>
+  </PropertyGroup>
+  
+  <Import Project="..\..\common.props"></Import>
+  
+  <Import Project="..\..\sign.props"></Import>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.KeyValues.Abstractions\Core.KeyValues.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.0" />
+    <PackageReference Include="System.Text.Json" Version="4.6.0" />
+  </ItemGroup>
+  
+</Project>

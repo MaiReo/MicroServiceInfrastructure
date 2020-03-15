@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\target-app.props"></Import>
+  <Import Project="..\..\common.props"></Import>
+  <Import Project="..\..\sign.props"></Import>
+  
+  <PropertyGroup>
+    <RootNamespace>Core.Web</RootNamespace>
+    <PackageId>MaiReo.MicroService.AspNetCore.AutoFacIntegration</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="AutoFac.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Abstractions.AutoFacIntegration\Core.Abstractions.AutoFacIntegration.csproj" />
+    <ProjectReference Include="..\Core.AspNetCore.Common\Core.AspNetCore.Common.csproj" />
+    <ProjectReference Include="..\Core.Messages.RabbitMQ.AutoFacIntegration\Core.Messages.RabbitMQ.AutoFacIntegration.csproj" />
+    <ProjectReference Include="..\Core.PersistentStore.EntityFrameworkCore\Core.PersistentStore.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Core.PersistentStore.ElasticSearch6\Core.PersistentStore.ElasticSearch6.csproj" />
+    <ProjectReference Include="..\Core.Events.Bus.Mediator\Core.Events.Bus.Mediator.csproj" />
+    <ProjectReference Include="..\Core.KeyValues\Core.KeyValues.csproj" />
+  </ItemGroup>
+
+</Project>

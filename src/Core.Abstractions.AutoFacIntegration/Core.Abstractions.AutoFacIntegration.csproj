@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\target-std.props"></Import>
+  <Import Project="..\..\common.props"></Import>
+  <Import Project="..\..\sign.props"></Import>
+
+  <PropertyGroup>
+    <PackageId>MaiReo.MicroService.AutoFacIntegration</PackageId>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Abstractions\Core.Abstractions.csproj" />
+  </ItemGroup>
+  
+</Project>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props"></Import>
+  <Import Project="..\..\sign.props"></Import>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Core.KeyValues.Remote</RootNamespace>
+    <PackageId>MaiReo.MicroService.KeyValues.Remote</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.KeyValues.Abstractions\Core.KeyValues.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

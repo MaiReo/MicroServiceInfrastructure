@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props"></Import>
+  <Import Project="..\..\sign.props"></Import>
+  
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Core.KeyValues</RootNamespace>
+    <PackageId>MaiReo.MicroService.KeyValues</PackageId>   
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.KeyValues.AliyunACM\Core.KeyValues.AliyunACM.csproj" />
+    <ProjectReference Include="..\Core.KeyValues.InMemory\Core.KeyValues.InMemory.csproj" />
+    <ProjectReference Include="..\Core.KeyValues.Json\Core.KeyValues.Json.csproj" />
+    <ProjectReference Include="..\Core.KeyValues.Remote\Core.KeyValues.Remote.csproj" />
+  </ItemGroup>
+</Project>
